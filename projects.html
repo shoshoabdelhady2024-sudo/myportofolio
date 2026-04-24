@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+ <nav id="navbar2"
+        class="navbar navbar-expand-sm  "
+    >
+        <div class="container">
+            <a class="navbar-brand text-uppercase  "  href="#" style="color: rgb(255, 255, 255);font-weight: 500;font-size: 25px" >shahd  Abdelhady</a>
+            <div>
+   <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item"  >
+                        <a class="nav-link  " href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link  " text-light href="about.html">about</a>
+                    </li>
+                    <li class="nav-item" id="home">
+                        <a class="nav-link " href="projects.html">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html">contact</a>
+                    </li>
+                </ul>
+                     <button id="themeToggle" class="btn btn-dark d-flex align-items-center">
+  <i id="themeIcon" class="fa-solid fa-moon" style="color: rgb(116, 192, 252);"></i>
+</button>
+
+<script>
+const btn = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
+const html = document.documentElement;
+
+
+const savedTheme = localStorage.getItem("theme") || "light";
+html.setAttribute("data-theme", savedTheme);
+
+
+if(savedTheme === "dark"){
+  icon.className = "fa-solid fa-sun";
+  icon.style.color = "rgb(255, 204, 0)";
+} else {
+  icon.className = "fa-solid fa-moon";
+  icon.style.color = "rgb(116, 192, 252)";
+}
+
+
+btn.addEventListener("click", () => {
+  if(html.getAttribute("data-theme") === "dark"){
+    html.setAttribute("data-theme", "light");
+    icon.className = "fa-solid fa-moon";
+    icon.style.color = "rgb(116, 192, 252)";
+    localStorage.setItem("theme", "light");
+  } else {
+    html.setAttribute("data-theme", "dark");
+    icon.className = "fa-solid fa-sun";
+    icon.style.color = "rgb(255, 204, 0)";
+    localStorage.setItem("theme", "dark");
+  }
+});
+</script>
+            </div>
+            </div>
+        </div>
+    </nav>
+   
+
+    
+    <section id="projects">
+        <div class="container"  id="font">
+
+<div class="row p-4">
+    <h2 class="text-capitalize text-dark" >my projects:</h2>
+   <div class="col-12 col-md-6 col-lg-4 mt-3" >
+       <a href="https://shoshoabdelhady2024-sudo.github.io/food-lover/" target="_blank" class="d-flex justify-content-center" >
+         <div id="img5" class="d-flex justify-content-center align-items-center" >
+
+        </div>
+    </a> 
+    <h4 class="typing mt-3">Restaurant</h4>
+        <p class="mt-2">"Discover a world of delicious dishes!  Our website is here to showcase all the tasty creations, bring you the best deals, and make booking your table super easy in just a few clicks—all while giving food lovers a smooth and delightful experience."</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <a href="https://shoshoabdelhady2024-sudo.github.io/my_project/" target="_blank" class="d-flex justify-content-center">
+             <div id="img6" class="d-flex justify-content-center align-items-center">
+
+        </div>
+        </a>
+        <h3 class="typing mt-3 text-capitalize">company</h3>
+        <p class="mt-2">Appexy is a responsive marketing landing page designed to showcase a digital app or service. It features sections for app features, pricing plans, contact form, and a dark/light mode toggle. The page is visually appealing, fully responsive, and uses interactive elements to enhance user experience.</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <a href="https://shoshoabdelhady2024-sudo.github.io/furni-2/" target="_blank" class="d-flex justify-content-center">
+             <div id="img7" class="d-flex justify-content-center align-items-center">
+
+        </div>
+        </a>
+        <h3 class="typing mt-3 text-capitalize">furni</h3>
+        <p class="mt-2">A responsive online furniture store with product listings, services, testimonials, and a newsletter. Features a homepage, shop, about, blog, and contact pages. Uses Bootstrap for design and interactivity.</p>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <a href="https://shoshoabdelhady2024-sudo.github.io/cruds/" target="_blank" class="d-flex justify-content-center">
+            <div id="img2" class="d-flex justify-content-center align-items-center">
+<h1 class="text-capitalize">cruds</h1>
+        </div>
+        </a>
+        <h3 class="typing mt-3 text-capitalize">cruds</h3>
+        <p class="mt-2">"This is a simple and user-friendly CRUD system for managing products. You can add new products, update existing ones, delete single or all products, calculate total prices automatically, and search by title or category. Perfect for keeping track of your inventory easily and efficiently!"</p>
+        
+    </div>
+  
+    
+   <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <a href="https://shoshoabdelhady2024-sudo.github.io/nouvil/" target="_blank" class="d-flex justify-content-center">
+            <div id="img3" class="d-flex justify-content-center align-items-center">
+
+        </div>
+        </a>
+        <h3 class="typing mt-3 text-capitalize">moon</h3>
+        <p class="mt-2">"Nouvil is a visually stunning and interactive website designed to showcase content in a dynamic way. With animated backgrounds, smooth scrolling, and layered images, it creates an immersive experience for visitors while keeping navigation simple and user-friendly."</p>
+        
+    </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-3">
+        <a href="calc.html" target="_blank" class="d-flex justify-content-center"> 
+            <div id="img4" class="d-flex justify-content-center align-items-center">
+
+        </div></a>
+        <h3 class="typing mt-3 text-capitalize">calc</h3>
+        <p class="mt-2">"This is a simple currency converter that lets you quickly convert between Dollars and Pounds. Just type the amount in one field, and the other updates instantly—fast, easy, and user-friendly."</p>
+    </div>
+</div>
+        </div>
+    </section>
+    <footer class="bg-dark text-light pt-4 pb-3">
+  <div class="container text-center">
+    <p>&copy; 2026 Shahd Abdelhady. All Rights Reserved.</p>
+    <div class="social-links mb-2">
+      <a href="https://github.com/shoshoabdelhady2024-sudo" target="_blank">
+        <i class="fa-brands fa-github fa-lg text-light m-2"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shahd abdelhady" target="_blank">
+        <i class="fa-brands fa-linkedin fa-lg text-light m-2"></i>
+      </a>
+      <a href="https://twitter.com/username" target="_blank">
+        <i class="fa-brands fa-twitter fa-lg text-light m-2"></i>
+      </a>
+    </div>
+   
+  </div>
+</footer>
+
+<button id="scroll" >
+    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(177, 151, 252)" d="M297.4 566.6C309.9 579.1 330.2 579.1 342.7 566.6L502.7 406.6C515.2 394.1 515.2 373.8 502.7 361.3C490.2 348.8 469.9 348.8 457.4 361.3L352 466.7L352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 466.7L182.6 361.3C170.1 348.8 149.8 348.8 137.3 361.3C124.8 373.8 124.8 394.1 137.3 406.6L297.3 566.6z"/></svg>
+</button>
+<script>   
+let btn2 = document.getElementById('scroll');
+btn2.style.width='100px';
+btn2.style.height='100px';
+window.onscroll=function(){
+    if(scrollY =>500){
+        btn2.style.display='block';
+    }else {
+        btn2.style.display='none';
+    }
+}
+btn2.onclick= function(){
+   scroll({
+    left:0,
+    top:0,
+    behavior:"smooth",
+   } );
+   
+}
+</script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

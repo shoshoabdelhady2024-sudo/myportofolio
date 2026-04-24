@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<nav id="navbar2"
+        class="navbar navbar-expand-sm  "
+    >
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-light"  href="#" style="font-weight: 500;font-size: 25px" >shahd Abdelhady</a>
+            <div>
+   <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item"  >
+                        <a class="nav-link " href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">projects</a>
+                    </li>
+                    <li class="nav-item" id="home">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                  
+                </ul>
+                     <button id="themeToggle" class="btn btn-dark d-flex align-items-center">
+  <i id="themeIcon" class="fa-solid fa-moon" style="color: rgb(116, 192, 252);"></i>
+</button>
+
+<script>
+const btn = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
+const html = document.documentElement;
+
+
+const savedTheme = localStorage.getItem("theme") || "light";
+html.setAttribute("data-theme", savedTheme);
+
+
+if(savedTheme === "dark"){
+  icon.className = "fa-solid fa-sun";
+  icon.style.color = "rgb(255, 204, 0)";
+} else {
+  icon.className = "fa-solid fa-moon";
+  icon.style.color = "rgb(116, 192, 252)";
+}
+
+
+btn.addEventListener("click", () => {
+  if(html.getAttribute("data-theme") === "dark"){
+    html.setAttribute("data-theme", "light");
+    icon.className = "fa-solid fa-moon";
+    icon.style.color = "rgb(116, 192, 252)";
+    localStorage.setItem("theme", "light");
+  } else {
+    html.setAttribute("data-theme", "dark");
+    icon.className = "fa-solid fa-sun";
+    icon.style.color = "rgb(255, 204, 0)";
+    localStorage.setItem("theme", "dark");
+  }
+});
+</script>
+  
+</button>
+            </div>
+         
+                
+            </div>
+        </div>
+    </nav>
+    <section class="mt-5 mb-5" id="contact">
+        <div class="container d-flex flex-column align-items-center">
+          <div id="form5">
+           <form id="contactForm" class="d-flex justify-content-center">
+    <div id="form">
+ <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">phone</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Your phone">
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject" placeholder="Subject">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+      </div>
+      <div >
+        <button type="submit" id="btn5" >Send Message</button>
+      </div>
+      <div>
+        <p class="mt-4 text-light text-center">phone number:+201094890864</p>
+      </div>
+       <div class="social-links mb-4 text-center mt-4">
+    <a href="https://github.com/shoshoabdelhady2024-sudo" target="_blank" ><i class="fa-brands fa-github fa-2xl" style="color: rgb(116, 192, 252);"></i></a>
+    <a href="https://www.linkedin.com/in/shahd-abdelhady-04025b3b1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" ><i class="fa-brands fa-linkedin fa-2xl" style="color: rgb(116, 192, 252);"></i></a>
+    <a href="https://twitter.com/username" target="_blank" ><i class="fa-brands fa-twitter fa-2xl" style="color: rgb(116, 192, 252);"></i></a>
+  </div>
+
+ 
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.123456789!2d31.2357123!3d30.0444192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841f6a4b11f3b%3A0x8f9abc1234567!2sCairo%2C%20Egypt!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+    </div>
+     
+    </form>
+          </div>
+  
+        </div>
+    </section>
+
+<script>
+  
+</script>
+<footer class="bg-dark text-light pt-4 pb-3">
+  <div class="container text-center">
+    <p>&copy; 2026 Shahd Abdelhady. All Rights Reserved.</p>
+    <div class="social-links mb-2">
+      <a href="https://github.com/shoshoabdelhady2024-sudo" target="_blank">
+        <i class="fa-brands fa-github fa-lg text-light m-2"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shahd abdelhady" target="_blank">
+        <i class="fa-brands fa-linkedin fa-lg text-light m-2"></i>
+      </a>
+      <a href="https://twitter.com/username" target="_blank">
+        <i class="fa-brands fa-twitter fa-lg text-light m-2"></i>
+      </a>
+    </div>
+   
+  </div>
+</footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // يمنع الإرسال الافتراضي
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !subject || !message) {
+        alert("Please fill out all fields before sending.");
+        return;
+      }
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      // لو كل حاجة صح، الانتقال لصفحة thankyou.html
+      window.location.href = "thankyou.html";
+    });
+  </script>
+<button id="scroll" onclick="high()" >
+    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(177, 151, 252)" d="M297.4 566.6C309.9 579.1 330.2 579.1 342.7 566.6L502.7 406.6C515.2 394.1 515.2 373.8 502.7 361.3C490.2 348.8 469.9 348.8 457.4 361.3L352 466.7L352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 466.7L182.6 361.3C170.1 348.8 149.8 348.8 137.3 361.3C124.8 373.8 124.8 394.1 137.3 406.6L297.3 566.6z"/></svg>
+</button>
+<script>
+    
+let btn2 = document.getElementById('scroll');
+btn2.style.width='100px';
+btn2.style.height='100px';
+window.onscroll = function() {
+    if (scrollY >= 500) { 
+        btn2.style.display = 'block';
+    } else {
+        btn2.style.display = 'none';
+    }
+}
+btn2.onclick= function(){
+   scroll({
+    left:0,
+    top:0,
+    behavior:"smooth",
+   } );
+}
+</script>
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

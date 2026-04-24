@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+    
+    
+
+
+    <section  class="sec2 mb-5">
+        <nav 
+        class="navbar navbar-expand-sm  "
+    >
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-light"  href="#" style="font-weight: 500;font-size: 25px">shahd  Abdelhady</a>
+            <div>
+   <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item"  >
+                        <a class="nav-link " href="index.html" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item" id="home">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                  
+                </ul>
+                     <button id="themeToggle" class="btn btn-dark d-flex align-items-center">
+  <i id="themeIcon" class="fa-solid fa-moon" style="color: rgb(116, 192, 252);"></i>
+</button>
+
+<script>
+const btn = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
+const html = document.documentElement;
+
+
+const savedTheme = localStorage.getItem("theme") || "light";
+html.setAttribute("data-theme", savedTheme);
+
+
+if(savedTheme === "dark"){
+  icon.className = "fa-solid fa-sun";
+  icon.style.color = "rgb(255, 204, 0)";
+} else {
+  icon.className = "fa-solid fa-moon";
+  icon.style.color = "rgb(116, 192, 252)";
+}
+
+
+btn.addEventListener("click", () => {
+  if(html.getAttribute("data-theme") === "dark"){
+    html.setAttribute("data-theme", "light");
+    icon.className = "fa-solid fa-moon";
+    icon.style.color = "rgb(116, 192, 252)";
+    localStorage.setItem("theme", "light");
+  } else {
+    html.setAttribute("data-theme", "dark");
+    icon.className = "fa-solid fa-sun";
+    icon.style.color = "rgb(255, 204, 0)";
+    localStorage.setItem("theme", "dark");
+  }
+});
+</script>
+  
+</button>
+            </div>
+         
+                
+            </div>
+        </div>
+    </nav>
+        <div class="container" id="sec2">
+ <div class="row align-items-center">
+    
+    <div class="col mb-5">
+      <h2 class="fade-up mb-3 mt-5">Shahd Abdelhady</h2>
+      <p class="fade-up">
+Hi, I'm Shahd Abdelhadi, a 16-year-old programmer from Giza, Egypt. I'm passionate about coding and love turning ideas into creative and functional websites. I enjoy exploring new technologies and continuously improving my skills as a frontend developer.
+
+I'm currently studying at WE School for Applied Technology, where I'm building a strong foundation in programming and technology. I have experience in frontend development and have recently started learning backend development to become a full-stack developer.
+
+Besides programming, I also love drawing and expressing creativity in different ways. I'm always curious, eager to learn, and excited to build projects that combine design and technology.
+</p>
+      <button id="btn5" class="fade-upmb-5"> <a href="contact.html" >Contact Me</a></button>
+     
+    </div>
+
+   
+  
+
+  </div>
+        </div>
+ 
+</section>
+<section id="skills" class="">
+    <div class="container mt-4">
+<h2 class="text-center mb-5">My Skills</h2>
+  <div class="row  mt-5">
+     <h5 class="mb-3">Technical Skills</h5>
+    <div class="col-md-6 mb-3">
+<div class="d-flex flex-column gap-3">
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar w-100"  id="linear">HTML</div>
+      </div>
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar " style="width: 85%;" id="linear">CSS</div>
+      </div>
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar w-75"  id="linear">JS</div>
+      </div>
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar" style="width: 88%;" id="linear">bootstrap</div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <div class="d-flex flex-column gap-3">
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar" style="width: 66%;" id="linear">tailwand</div>
+      </div>
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar" style="width: 90%;" id="linear">photoshop</div>
+      </div>
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar" style="width: 58%;" id="linear">python</div>
+      </div>
+      <div class="progress mb-2 text-capitalize">
+        <div class="progress-bar" style="width: 72%;" id="linear">autocad</div>
+      </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div>
+
+  
+  <h5 class="mb-3">Other Skills</h5>
+  <div id="span">
+      <span class=" bg-primary m-1 py-2 px-3 rounded-4" id="span4">UI Design</span>
+      <span class=" bg-success m-1 py-2 px-3 rounded-4" id="span4">Creativity</span>
+      <span class=" bg-danger m-1 py-2 px-3 rounded-4" id="span4">Drawing</span>
+      <span class=" bg-dark m-1 py-2 px-3 rounded-4" id="span4">Problem Solving</span>
+      <span class=" bg-secondary m-1 py-2 px-3 rounded-4" id="span4">Fast Learning</span>
+      </div>
+      </div>
+    </div>
+  
+</section>
+    <section id="interests" class="text-center">
+        <div class="container mb-5">
+ <h2 class="mb-5">My Interests</h2>
+
+  <div class="row mb-5">
+
+    <div class="col-md-4 mb-5">
+      <div class="card p-4 rounded-3">
+        <i class="fa-solid fa-palette fa-2x mb-3"></i>
+        <h5>Drawing</h5>
+        <p>I enjoy expressing creativity through art.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-5">
+      <div class="card p-4 rounded-3">
+        <i class="fa-solid fa-code fa-2x mb-3"></i>
+        <h5>Coding</h5>
+        <p>I love building websites and learning new technologies.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-5">
+      <div class="card p-4 rounded-3">
+        <i class="fa-solid fa-compass fa-2x mb-3"></i>
+        <h5>Exploring</h5>
+        <p>I enjoy discovering new ideas and experiences.</p>
+      </div>
+    </div>
+
+  </div>
+        </div>
+ 
+</section>
+
+
+<footer class="bg-dark text-light pt-4 pb-3">
+  <div class="container text-center">
+    <p>&copy; 2026 Shahd Abdelhady. All Rights Reserved.</p>
+    <div class="social-links mb-2">
+      <a href="https://github.com/shoshoabdelhady2024-sudo" target="_blank">
+        <i class="fa-brands fa-github fa-lg text-light m-2"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/shahd abdelhady" target="_blank">
+        <i class="fa-brands fa-linkedin fa-lg text-light m-2"></i>
+      </a>
+      <a href="https://twitter.com/username" target="_blank">
+        <i class="fa-brands fa-twitter fa-lg text-light m-2"></i>
+      </a>
+    </div>
+   
+  </div>
+</footer>
+ 
+
+<button id="scroll" onclick="high()" >
+    <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(177, 151, 252)" d="M297.4 566.6C309.9 579.1 330.2 579.1 342.7 566.6L502.7 406.6C515.2 394.1 515.2 373.8 502.7 361.3C490.2 348.8 469.9 348.8 457.4 361.3L352 466.7L352 96C352 78.3 337.7 64 320 64C302.3 64 288 78.3 288 96L288 466.7L182.6 361.3C170.1 348.8 149.8 348.8 137.3 361.3C124.8 373.8 124.8 394.1 137.3 406.6L297.3 566.6z"/></svg>
+</button>
+<script>
+    
+let btn2 = document.getElementById('scroll');
+btn2.style.width='100px';
+btn2.style.height='100px';
+window.onscroll = function() {
+    if (scrollY >= 500) { 
+        btn2.style.display = 'block';
+    } else {
+        btn2.style.display = 'none';
+    }
+}
+btn2.onclick= function(){
+   scroll({
+    left:0,
+    top:0,
+    behavior:"smooth",
+   } );
+}
+</script>
+
+<script src="bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
